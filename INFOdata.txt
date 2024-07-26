@@ -1,0 +1,34 @@
+# Setup
+
+Ubuntu/Debian or any linux system
+
+
+# TERMS-
+SDN (OpenFlow)
+DDOS
+SVM (py has inbuilt library)
+Decision Tree(similar algo to SVM)
+MIninet
+Ryu Controller
+
+
+
+
+
+# TOOLS
+
+OS- Ubuntu/Debian or any linux system
+pyhton 3.6+
+OpenFlow
+MIninet
+Ryu Controller
+Hping3
+Iperf
+
+commands--
+train for atlease 600-800sec
+sudo mn -c
+sudo python3 topo.py
+ryu manager controller.py
+clear mininet histry after every topo.py
+port block for 120sec and after that if ddos is there then it will again block the port

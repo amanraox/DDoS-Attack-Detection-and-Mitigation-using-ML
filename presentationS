@@ -1,0 +1,43 @@
+# presentation
+
+## intro
+
+This project aims to improve the security of Software-Defined Networking (SDN) by detecting and mitigating Distributed Denial of Service (DDoS) attacks. By utilizing machine learning and statistical methods, the goal is to create effective solutions that accurately identify and counteract DDoS threats, ensuring the stability, performance, and resilience of SDN environments against such malicious activities.
+
+## problem identification
+
+Distributed Denial of Service (DDoS) attacks occur due to various reasons, often driven by different motivations and exploiting specific vulnerabilities. Here are some common causes:
+
+Competitive Advantage:
+
+Business Rivals: Competitors might launch DDoS attacks to gain a competitive edge by crippling a rival’s online services.
+
+Revenge or Grudge:
+
+Disgruntled Employees: Former or current employees with grievances may use DDoS attacks to disrupt their employer’s operations.
+Personal Vendettas: Individuals with personal grudges might target websites or services as an act of revenge.
+
+Ransom DDoS: Attackers threaten or launch DDoS attacks and demand payment to cease the attacks.
+Inexperienced Hackers: Individuals with little technical expertise use pre-made scripts or tools to launch DDoS attacks for fun or reputation.
+
+Exploitation of Vulnerabilities:
+
+Weak Security Measures: Poorly secured systems and applications can be easily exploited to amplify DDoS attacks.
+Misconfigured Servers: Misconfigured servers can be used as amplification points in DDoS attacks.
+
+Testing and Learning:
+
+Training Grounds: Cybercriminals might use DDoS attacks to test their tools, techniques, or as a training exercise for larger attacks.
+Political or Ideological Reasons:
+
+Disruption of Opposing Views: Groups may use DDoS attacks to silence or disrupt websites that host opposing political or ideological views.
+
+
+## methodology
+
+==> Application layer DDoS attacks aim to exhaust the resources of the targeted application or server by overwhelming it with a high volume of requests. These attacks are typically harder to detect because they often resemble legitimate traffic.
+HTTP Flood: Attackers send a large number of HTTP requests to a web server, overwhelming it and causing it to become unresponsive.
+
+==> Protocol layer DDoS attacks target vulnerabilities in the network protocols to exhaust network resources and disrupt connectivity.
+SYN Flood:Attackers send a flood of SYN packets to a target server, initiating many half-open connections and exhausting server resources needed to handle legitimate connections.
+UDP Flood:This attack involves sending a large number of UDP packets to random ports on a target server, causing the server to respond with ICMP Destination Unreachable packets, which can overwhelm the server.
