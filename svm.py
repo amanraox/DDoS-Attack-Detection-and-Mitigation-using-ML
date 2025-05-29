@@ -4,7 +4,7 @@ import os
 from sklearn import svm
 from collections import deque
 from sklearn import tree
-
+from sklearn.ensemble import RandomForestClassifier
 
 
 class SVM:
@@ -13,11 +13,13 @@ class SVM:
         """
         train the model from generated training data in generate-data folder
         """
-        data = numpy.loadtxt(open('result.csv', 'rb'), delimiter=',', dtype='str')
+        data = numpy.loadtxt('result.csv', delimiter=',')
+        #data = numpy.loadtxt(open('result.csv', 'rb'), delimiter=',', dtype='str')
         #Support_Vector_Machine
         #self.svm = svm.SVC()
         # Decision tree
-        self.svm = tree.DecisionTreeClassifier()
+        #self.svm = tree.DecisionTreeClassifier()
+        self.svm = RandomForestClassifier()
         self.svm.fit(data[:, 0:3], data[:, 3])
 
 
@@ -29,3 +31,5 @@ class SVM:
         prediction = self.svm.predict(fparams)
         print("SVM input data", data , "prediction result ", prediction)
         return prediction
+
+
